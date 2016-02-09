@@ -1,0 +1,71 @@
+
+body {
+	@include font;
+	font-size: 85%;
+	line-height: 1.5em;
+	color: $grey;
+	background-color: #eee;
+	
+	@include respond-to( 1024px ) {
+		font-size: 100%;
+	}
+}
+
+a {
+	color: $red;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		color: lighten( $red, 10% );
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 1.7em;
+	@include font;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+
+	&.caps {
+		text-transform: uppercase;
+		padding-top: 50px;
+	}
+
+}
+
+h4 {
+	font-size: 1.8em;
+	line-height: 1.3em;
+}
+
+
+input[type=text] {
+	display: block;
+	width: 100%;
+	padding: 14px 20px;
+	border: 1px solid $grey;
+	font-size: 20px;
+	line-height: 20px;
+	-webkit-appearance: none;
+	background: white;
+	margin-bottom: 20px;
+}
+

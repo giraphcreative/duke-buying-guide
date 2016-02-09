@@ -1,0 +1,56 @@
+
+
+// color variables
+$yellow: #F3C25B;
+$teal: #83BAB2;
+$green: #8B9E74;
+$red: #c22032;
+$grey: #414042;
+$navy: #1E376C;
+
+
+@import "reset";
+
+@import "fonts";
+
+@import "mixins";
+
+@import "base";
+
+@import "grid";
+
+
+
+// background-container
+.container {
+	background: white;
+	max-width: 840px;
+	margin: 0 auto;
+
+	@include respond-to( 1220px ) {
+		padding-bottom: 20px;
+	}
+}
+
+
+// header styles
+header {
+
+}
+
+
+
+// form half
+.half.form {
+	padding: 30px 30px 0 0;
+}
+
+
+
+// footer styles
+footer {
+	color: $grey;
+	text-align: center;
+	@include clearfix;
+}
+
